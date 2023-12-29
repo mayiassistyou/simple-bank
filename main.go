@@ -10,7 +10,6 @@ import (
 	"github.com/mayiassistyou/simple-bank/util"
 )
 
-
 func main() {
 	config, err := util.LoadConfig(".")
 	if err != nil {

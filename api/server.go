@@ -8,7 +8,7 @@ import (
 )
 
 type Server struct {
-	store db.Store
+	store  db.Store
 	router *gin.Engine
 }
 

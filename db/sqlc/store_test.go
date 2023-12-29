@@ -14,7 +14,7 @@ func TestTransferTx(t *testing.T) {
 	account1 := createRandomAccount(t)
 	account2 := createRandomAccount(t)
 
-	n:= 5
+	n := 5
 	amount := int64(10)
 
 	errs := make(chan error)
@@ -24,8 +24,8 @@ func TestTransferTx(t *testing.T) {
 		go func() {
 			result, err := store.TransferTx(context.Background(), CreateTransferParams{
 				FromAccountID: account1.ID,
-				ToAccountID: account2.ID,
-				Amount: amount,
+				ToAccountID:   account2.ID,
+				Amount:        amount,
 			})
 
 			errs <- err
